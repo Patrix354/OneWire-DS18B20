@@ -6,12 +6,13 @@
 
 #include "ds18b20.h"
 
-int8_t cel;
-uint8_t cel_fract;
-uint8_t subzero;
-
 int main(void)
 {
+	//declaration necessary variables
+	int8_t cel = 0;
+	uint8_t cel_fract = 0;
+	uint8_t subzero = 0;
+	
 	//load sensors adresses	 
 	search_sensors();
 
